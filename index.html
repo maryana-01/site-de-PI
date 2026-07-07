@@ -14,10 +14,10 @@
     <header class="navbar">
         <div class="nav-left">
             <div class="logo">
-                
+
                 <a href="#" onclick="location.reload(); return false;">
-    <img src="./img/logo.png" alt="Logo">
-</a>
+                    <img src="./img/logo.png" alt="Logo">
+                </a>
             </div>
             <nav class="menu">
                 <a href="#galeria">Galeria</a>
@@ -78,122 +78,113 @@
         </div>
     </section>
 
-  <section id="galeria" class="py-5" style="background-color:#f5f0dc;">
+    <section id="galeria" class="py-5" style="background-color:#f5f0dc;">
 
-    <div class="container">
+        <div class="container">
 
-        <h2 class="text-center mb-3">Galeria Histórica</h2>
+            <h2 class="text-center mb-3">Galeria Histórica</h2>
 
-        <p class="text-center mb-5 text-secondary">
-            Registros iconográficos do conflito obtidos a partir de acervos e fotografias históricas da época.
-        </p>
+            <p class="text-center mb-5 text-secondary">
+                Registros iconográficos do conflito obtidos a partir de acervos e fotografias históricas da época.
+            </p>
 
-        <div id="carouselGaleria" class="carousel slide shadow-lg rounded overflow-hidden" data-bs-ride="carousel">
+            <div id="carouselGaleria" class="carousel slide shadow-lg rounded overflow-hidden" data-bs-ride="carousel">
 
-            <!-- Indicadores -->
+                <!-- Indicadores -->
 
-            <div class="carousel-indicators">
+                <div class="carousel-indicators">
 
-                <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="0"
+                        class="active"></button>
 
-                <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="1"></button>
 
-                <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="2"></button>
+
+                </div>
+
+                <!-- Slides -->
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+
+                        <img src="./img/galeria-sertanejos.jpg" class="d-block w-100"
+                            style="height:550px; object-fit:cover;" alt="Caboclos">
+
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+
+                            <h3>Os Caboclos</h3>
+
+                            <p>
+                                A população sertaneja unida em torno da subsistência comunitária e da fé
+                                nos redutos, reagindo à expropriação de suas terras.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <img src="./img/galeria-ferrovia.jpg" class="d-block w-100"
+                            style="height:550px; object-fit:cover;" alt="Ferrovia">
+
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+
+                            <h3>A Linha de Ferro</h3>
+
+                            <p>
+                                Trilhos da Brazil Railway Company cortando a região e transformando a
+                                paisagem do Contestado.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <img src="./img/galeria-tropas.jpg" class="d-block w-100"
+                            style="height:550px; object-fit:cover;" alt="Forças Federais">
+
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+
+                            <h3>Forças Federais</h3>
+
+                            <p>
+                                Contingente militar enviado para combater a resistência cabocla durante
+                                a Guerra do Contestado.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Botão anterior -->
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria"
+                    data-bs-slide="prev">
+
+                    <span class="carousel-control-prev-icon"></span>
+
+                </button>
+
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleria"
+                    data-bs-slide="next">
+
+                    <span class="carousel-control-next-icon"></span>
+
+                </button>
 
             </div>
-
-            <!-- Slides -->
-
-            <div class="carousel-inner">
-
-                <div class="carousel-item active">
-
-                    <img src="./img/galeria-sertanejos.jpg"
-                        class="d-block w-100"
-                        style="height:550px; object-fit:cover;"
-                        alt="Caboclos">
-
-                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
-
-                        <h3>Os Caboclos</h3>
-
-                        <p>
-                            A população sertaneja unida em torno da subsistência comunitária e da fé
-                            nos redutos, reagindo à expropriação de suas terras.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="carousel-item">
-
-                    <img src="./img/galeria-ferrovia.jpg"
-                        class="d-block w-100"
-                        style="height:550px; object-fit:cover;"
-                        alt="Ferrovia">
-
-                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
-
-                        <h3>A Linha de Ferro</h3>
-
-                        <p>
-                            Trilhos da Brazil Railway Company cortando a região e transformando a
-                            paisagem do Contestado.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="carousel-item">
-
-                    <img src="./img/galeria-tropas.jpg"
-                        class="d-block w-100"
-                        style="height:550px; object-fit:cover;"
-                        alt="Forças Federais">
-
-                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
-
-                        <h3>Forças Federais</h3>
-
-                        <p>
-                            Contingente militar enviado para combater a resistência cabocla durante
-                            a Guerra do Contestado.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Botão anterior -->
-
-            <button class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselGaleria"
-                data-bs-slide="prev">
-
-                <span class="carousel-control-prev-icon"></span>
-
-            </button>
-
-
-            <button class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselGaleria"
-                data-bs-slide="next">
-
-                <span class="carousel-control-next-icon"></span>
-
-            </button>
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
     <section id="mapa" class="linha-tempo" style="background-color: rgb(221, 221, 174); padding: 60px 20px;">
         <h2>Geografia do Conflito</h2>
@@ -378,7 +369,7 @@
         </div>
     </section>
 
-  
+
     <section id="monges">
         <h2> Os Monges </h2>
         <div class="cards-monges">
@@ -404,52 +395,190 @@
             </div>
         </div>
     </section>
-  <section id="materiais" class="secao-introducao"
+    <section id="materiais" class="secao-introducao"
         style="max-width: 100%; background-color: #f1ead1; padding-top: 20px;">
+
         <div class="introducao-container bloco-conteudo">
+
             <div class="introducao-header">
                 <h2>Materiais de Apoio & Fontes</h2>
-                <p style="color: #198754; font-weight: bold; margin-top: 10px;">Aprofunde seus estudos por meio de
-                    pesquisas científicas e acervos oficiais de relevância histórica:</p>
+                <p style="color:#198754; font-weight:bold; margin-top:10px;">
+                    Explore livros, pesquisas acadêmicas, documentários e acervos sobre a Guerra do Contestado.
+                </p>
             </div>
+
             <div class="introducao-corpo" style="font-family: Arial, sans-serif;">
-                <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 25px; border-bottom: 2px dashed #DDB63A; padding-bottom: 15px;">
-                        <strong style="color: #146c43; font-size: 18px; display: block; margin-bottom: 5px;">📚 Livro de
-                            Referência: "Lideranças do Contestado"</strong>
-                        <em>Autor: Prof. Dr. Paulo Pinheiro Machado (Universidade Federal de Santa Catarina -
-                            UFSC).</em><br>
-                        Estudo analítico indispensável que reconstrói a trajetória social dos caboclos e desmistifica a
-                        visão puramente "fanática" atribuída aos sertanejos e monges pela imprensa republicana da época.
-                    </li>
-                    <li style="margin-bottom: 25px; border-bottom: 2px dashed #DDB63A; padding-bottom: 15px;">
-                        <strong style="color: #146c43; font-size: 18px; display: block; margin-bottom: 5px;">📄
-                            Dissertação e Acervo: Repositório Institucional da UFSC e UNICAMP</strong>
-                        <em>Temática: O impacto socioeconômico da Brazil Railway Company e a Southern Brazil Lumber &
-                            Colonization Company.</em><br>
-                        Pesquisas acadêmicas em formato PDF que detalham o processo jurídico de concessão de terras
-                        públicas a Percival Farquhar e a consequente expropriação violenta dos moradores da região do
-                        Rio do Peixe.
-                    </li>
-                    <li style="margin-bottom: 25px; border-bottom: 2px dashed #DDB63A; padding-bottom: 15px;">
-                        <strong style="color: #146c43; font-size: 18px; display: block; margin-bottom: 5px;">🎬
-                            Documentário Oficial: "Contestado - Memórias da Guerra"</strong>
-                        <em>Produção: TV Senado / Assembleia Legislativa de Santa Catarina (ALESC).</em><br>
-                        Material audiovisual contendo entrevistas detalhadas com historiadores, geógrafos e relatos
-                        orais preservados por descendentes diretos de combatentes caboclos na região do vale do
-                        Contestado.
-                    </li>
-                    <li style="margin-bottom: 10px;">
-                        <strong style="color: #146c43; font-size: 18px; display: block; margin-bottom: 5px;">🏛️ Acervo
-                            Museológico: Museu Histórico e Antropológico da Região do Contestado</strong>
-                        <em>Localização física: Centro de Caçador - SC (Antiga Estação Ferroviária).</em><br>
-                        Base de dados física e digital que reúne pertences pessoais atribuídos aos monges, armamentos
-                        recolhidos dos campos de batalha e a icônica coleção fotográfica registrada pelo fotógrafo Claro
-                        Jansson entre 1912 e 1916.
-                    </li>
-                </ul>
+
+                <ul style="list-style:none; padding:0;">
+
+                    <ul style="list-style:none; padding:0;">
+
+                        <li style="margin-bottom:25px; border-bottom:2px dashed #DDB63A; padding-bottom:15px;">
+                            <strong style="color:#146c43; font-size:18px;">
+                                📄 A Questão de Terras no Contestado: Diversidade de Conflitos e Motivações
+                            </strong><br>
+
+                            <em>Autor: Paulo Pinheiro Machado (UFSC).</em><br>
+
+                            Artigo científico que analisa os conflitos fundiários e as diferentes motivações sociais e
+                            econômicas presentes na Guerra do Contestado.
+
+                            <br><br>
+
+                            <a href="https://www.periodicos.unc.br/index.php/drd/article/view/5013" target="_blank"
+                                style="color:#198754; font-weight:bold;">
+                                🔗 Acessar artigo
+                            </a>
+                        </li>
+
+                        <li style="margin-bottom:25px; border-bottom:2px dashed #DDB63A; padding-bottom:15px;">
+                            <strong style="color:#146c43; font-size:18px;">
+                                📄 Guerra, Cerco, Fome e Epidemias: Memórias e Experiências dos Sertanejos do Contestado
+                            </strong><br>
+
+                            <em>Autor: Paulo Pinheiro Machado.</em><br>
+
+                            Estudo sobre as condições de vida da população sertaneja durante os cercos militares e as
+                            consequências humanitárias da guerra.
+
+                            <br><br>
+
+                            <a href="https://revistas.ufrj.br/index.php/topoi/article/view/70481" target="_blank"
+                                style="color:#198754; font-weight:bold;">
+                                🔗 Acessar artigo
+                            </a>
+                        </li>
+
+                        <li style="margin-bottom:25px; border-bottom:2px dashed #DDB63A; padding-bottom:15px;">
+                            <strong style="color:#146c43; font-size:18px;">
+                                📄 Os Caboclos do Contestado: "Fanáticos" ou Não?
+                            </strong><br>
+
+                            <em>Autor: Caio Dias de Brito.</em><br>
+
+                            Pesquisa que discute criticamente a visão historiográfica sobre os caboclos envolvidos no
+                            conflito.
+
+                            <br><br>
+
+                            <a href="https://ojs.sites.ufsc.br/index.php/sceh/article/view/288" target="_blank"
+                                style="color:#198754; font-weight:bold;">
+                                🔗 Acessar artigo
+                            </a>
+                        </li>
+
+                        <li style="margin-bottom:25px; border-bottom:2px dashed #DDB63A; padding-bottom:15px;">
+                            <strong style="color:#146c43; font-size:18px;">
+                                📄 A Guerra do Contestado sob a Ótica da Obra <em>O Jagunço</em>: Violência, Gênero,
+                                Memória e Resistência
+                            </strong><br>
+
+                            Artigo que analisa a Guerra do Contestado a partir da obra literária <em>O Jagunço</em>,
+                            abordando aspectos históricos e culturais.
+
+                            <br><br>
+
+                            <a href="https://ojs.upf.br/index.php/ph/article/view/13794" target="_blank"
+                                style="color:#198754; font-weight:bold;">
+                                🔗 Acessar artigo
+                            </a>
+                        </li>
+
+                        <li style="margin-bottom:25px; border-bottom:2px dashed #DDB63A; padding-bottom:15px;">
+                            <strong style="color:#146c43; font-size:18px;">
+                                📄 A Ausência da Guerra: Histórias do Contestado através da Fuga, do Território e da
+                                Religiosidade
+                            </strong><br>
+
+                            Artigo que investiga a memória da Guerra do Contestado por meio das experiências dos
+                            sertanejos e das práticas religiosas.
+
+                            <br><br>
+
+                            <a href="https://econtents.sbu.unicamp.br/inpec/index.php/ruris/article/view/16889"
+                                target="_blank" style="color:#198754; font-weight:bold;">
+                                🔗 Acessar artigo
+                            </a>
+                        </li>
+
+                        <li style="margin-bottom:25px; border-bottom:2px dashed #DDB63A; padding-bottom:15px;">
+                            <strong style="color:#146c43; font-size:18px;">
+                                📚 A Guerra Santa do Contestado (PDF)
+                            </strong><br>
+
+                            <em>Organizador: Paulo Pinheiro Machado.</em><br>
+
+                            Livro completo em PDF reunindo estudos atualizados sobre a Guerra do Contestado.
+
+                            <br><br>
+
+                            <a href="https://videira.ifc.edu.br/wp-content/uploads/2023/10/Paulo-Pinheiro-Machado-org-A-Guerra-Santa-do-Contestado-Tintim-por-Tintim-2023.pdf"
+                                target="_blank" style="color:#198754; font-weight:bold;">
+                                📥 Baixar PDF
+                            </a>
+                        </li>
+
+                        <li style="margin-bottom:25px; border-bottom:2px dashed #DDB63A; padding-bottom:15px;">
+                            <strong style="color:#146c43; font-size:18px;">
+                                📄 Igualitarismo Caboclo e Uso Comum da Terra nos Redutos Sertanejos da Guerra do
+                                Contestado
+                            </strong><br>
+
+                            <em>Autor: Marlon Brandt.</em><br>
+
+                            Estudo sobre a organização social dos redutos caboclos e o uso coletivo da terra durante o
+                            conflito.
+
+                            <br><br>
+
+                            <a href="https://www.researchgate.net/publication/280094108_Igualitarismo_caboclo_e_uso_comum_da_terra_nos_redutos_sertanejos_da_Guerra_do_Contestado"
+                                target="_blank" style="color:#198754; font-weight:bold;">
+                                🔗 Acessar artigo
+                            </a>
+                        </li>
+
+                        <li style="margin-bottom:25px;">
+                            <strong style="color:#146c43; font-size:18px;">
+                                📄 Rábulas e Bacharéis na Guerra do Contestado: Direito, Polícia e Conflito Social
+                                (1912–1916)
+                            </strong><br>
+
+                            <em>Autor: Paulo Pinheiro Machado.</em><br>
+
+                            Pesquisa sobre a atuação do direito, das forças policiais e das relações de poder durante a
+                            Guerra do Contestado.
+
+                            <br><br>
+
+                            <a href="https://www.researchgate.net/publication/313014392_Rabulas_e_Bachareis_na_Guerra_do_Contestado_Direito_policia_e_conflito_social_1912-1916"
+                                target="_blank" style="color:#198754; font-weight:bold;">
+                                🔗 Acessar artigo
+                            </a>
+                        </li>
+<li style="margin-bottom:25px; border-bottom:2px dashed #DDB63A; padding-bottom:15px;">
+    <strong style="color:#146c43; font-size:18px;">
+        🎬 Documentário: Guerra do Contestado
+    </strong><br>
+
+    Documentário que apresenta as origens, os principais acontecimentos, os líderes religiosos e as consequências da Guerra do Contestado, com foco no contexto histórico do Sul do Brasil.
+
+    <br><br>
+
+    <a href="https://youtu.be/iXYDw0eL6i8?si=0auNSpuL7iCYUq9n"
+        target="_blank"
+        style="color:#198754; font-weight:bold;">
+        ▶ Assistir no YouTube
+    </a>
+</li>
+                    </ul>
+
+
+
+
             </div>
+
         </div>
+
     </section>
 
     <script>
@@ -521,7 +650,7 @@
             </p>
         </div>
     </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
