@@ -961,46 +961,47 @@
         </div>
 
     </section>
+<script>
+const campoPesquisa = document.querySelector('.search-input');
 
-    <script>
-        const campoPesquisa = document.querySelector('.search-input');
+campoPesquisa.addEventListener('input', function () {
 
-        campoPesquisa.addEventListener('input', function () {
-            const termo = this.value.toLowerCase().trim();
+    const termo = this.value.toLowerCase().trim();
 
-            let encontrados = 0;
+    let encontrados = 0;
 
-            document.querySelectorAll('.bloco-conteudo, .card-monge, .evento')
-                .forEach(item => {
+    document.querySelectorAll('section, .card').forEach(item => {
 
-                    const texto = item.textContent.toLowerCase();
+        const texto = item.textContent.toLowerCase();
 
-                    if (texto.includes(termo) || termo === "") {
-                        item.style.display = "";
-                        encontrados++;
-                    } else {
-                        item.style.display = "none";
-                    }
-                });
+        if (texto.includes(termo) || termo === "") {
+            item.style.display = "";
+            encontrados++;
+        } else {
+            item.style.display = "none";
+        }
 
-            let aviso = document.getElementById('semResultados');
+    });
 
-            if (!aviso) {
-                aviso = document.createElement('p');
-                aviso.id = 'semResultados';
-                aviso.style.textAlign = 'center';
-                aviso.style.fontSize = '20px';
-                aviso.style.color = '#198754';
-                aviso.style.margin = '30px';
-                document.body.appendChild(aviso);
-            }
+    let aviso = document.getElementById('semResultados');
 
-            aviso.textContent =
-                encontrados === 0
-                    ? 'Nenhum resultado encontrado.'
-                    : '';
-        });
-    </script>
+    if (!aviso) {
+        aviso = document.createElement('p');
+        aviso.id = 'semResultados';
+        aviso.style.textAlign = 'center';
+        aviso.style.fontSize = '20px';
+        aviso.style.color = '#198754';
+        aviso.style.margin = '30px';
+        document.body.appendChild(aviso);
+    }
+
+    aviso.textContent =
+        encontrados === 0
+            ? 'Nenhum resultado encontrado.'
+            : '';
+
+});
+</script>
 
     <footer
         style="background-color: #198754; color: #f1ead1; padding: 40px 20px; text-align: center; margin-top: 50px; font-family: Arial, sans-serif;">
