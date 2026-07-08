@@ -800,7 +800,7 @@ strong {
 }
 
 #cacador-guerra .card p{
-    color:#555;
+    color:#5c7c20;
     line-height:1.8;
     text-align:justify;
     margin:0;
@@ -821,7 +821,7 @@ strong {
 }
 
 #cacador-guerra .bg-light p{
-    color:#555;
+    color:#476d0b;
     line-height:1.9;
     text-align:justify;
 }
@@ -839,9 +839,109 @@ strong {
 #cacador-guerra .alert strong{
     color:#146c43;
 }
+#carouselGaleria {
+    border: 8px solid #adac43;
+    border-radius: 18px !important;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+    overflow: hidden;
+    background-color: #1c130d;
+}
 
-@media(max-width:992px){
+#carouselGaleria .carousel-item {
+    transition: transform 1s ease-in-out;
+}
 
+#carouselGaleria img {
+    height: 550px;
+    object-fit: cover;
+    filter: brightness(85%);
+    transition: transform 0.8s ease, filter 0.8s ease;
+}
+
+#carouselGaleria .carousel-item:hover img {
+    transform: scale(1.03);
+    filter: brightness(100%);
+}
+
+#carouselGaleria .carousel-caption {
+    background: rgba(22, 82, 25, 0.75) !important;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 12px !important;
+    padding: 20px !important;
+    bottom: 35px;
+}
+
+#carouselGaleria .carousel-caption h3 {
+ 
+    color: #e8c77b;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#carouselGaleria .carousel-caption p {
+
+    color: #f5f0dc;
+    font-size: 1rem;
+}
+
+.carousel-indicators button {
+    width: 45px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #e8c77b;
+    opacity: 0.5;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 8%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-size: 70%;
+    padding: 25px;
+    background-color: rgba(29, 59, 26, 0.8);
+    border-radius: 50%;
+}
+
+section h2 {
+   
+    color: #233b1a;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+
+@media(max-width:768px){
+
+    #carouselGaleria {
+        border-width: 5px;
+    }
+
+    #carouselGaleria img {
+        height: 350px;
+    }
+
+    #carouselGaleria .carousel-caption {
+        bottom: 15px;
+        padding: 12px !important;
+    }
+
+    #carouselGaleria .carousel-caption h3 {
+        font-size: 1.2rem;
+    }
+
+    #carouselGaleria .carousel-caption p {
+        font-size: 0.85rem;
+    }
     #cacador-guerra{
         padding:70px 0;
     }
